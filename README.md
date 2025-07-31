@@ -60,3 +60,19 @@ To deploy the agent in user space on the client side (the TCP connection initiat
 python user_space_server.py
 ```
 Ensure that MPTCP connections use the `jazz` congestion control algorithm while `user_space_server.py` is running.
+
+## Edge Deployment
+
+In an edge deployment scenario:
+
+1.  Deploy `backend_server (decision engine).py` and its dependencies on the decision engine server.
+2.  Deploy `frontend_server (proxy).py` in the user space of the MPTCP connection initiator.
+3.  Configure the IP address of the decision engine in the proxy script (`frontend_server (proxy).py`) to enable communication between the proxy and the decision engine.
+
+## ⚠️ Important Notice
+
+This demo is currently in the experimental stage. It is designed to work specifically with MPTCP connections that have **exactly two subflows**. Using a different number of subflows will likely result in a kernel panic.
+
+Future development will focus on:
+-   Supporting a variable number of subflows.
+-   Implementing proper handling for fallback to standard TCP.
