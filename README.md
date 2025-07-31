@@ -71,7 +71,7 @@ In an edge deployment scenario:
 
 ## ⚠️ Important Notice
 
-This demo is currently in the experimental stage. It is designed to work specifically with MPTCP connections that have **exactly two subflows**. Using a different number of subflows will likely result in a kernel panic.
+This demo is currently in the experimental stage. It is designed to work specifically with MPTCP connections that have **exactly two subflows**. Using a different number of subflows will likely result in a kernel panic. Please ensure that all kernel-side subflow clients are disconnected (as indicated in the proxy or server logs) before starting the next test.
 
 Future development will focus on:
 -   Supporting a variable number of subflows.
