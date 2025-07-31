@@ -15,12 +15,13 @@ This repository contains two versions of the Linux kernel (packaged as `.deb` in
 To install a kernel, copy all its corresponding `.deb` files into a dedicated directory and run the following commands:
 
 Install the kernel packages:
-```bash
+
 sudo dpkg -i linux-*.deb
-```
+
+
 
 Next, edit the GRUB configuration to set the default kernel on boot:
-```bash
+
 sudo vim /etc/default/grub
 Inside the file, modify the `GRUB_DEFAULT` value to the name of the kernel version you wish to use.
 ```bash
