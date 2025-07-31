@@ -76,3 +76,4 @@ This demo is currently in the experimental stage. It is designed to work specifi
 Future development will focus on:
 -   Supporting a variable number of subflows.
 -   Implementing proper handling for fallback to standard TCP.
+-   Increasing security measures.
