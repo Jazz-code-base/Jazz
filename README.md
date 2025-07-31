@@ -3,11 +3,6 @@ Code for paper "Edge-Served Congestion Control for Wireless Multipath Transmissi
 
 https://github.com/user-attachments/assets/bf57b1fd-a585-4b49-b2d2-87d0e6cf50e9
 
-# Jazz
-Code for paper "Edge-Served Congestion Control for Wireless Multipath Transmission with a Transformer Agent"
-
-https://github.com/user-attachments/assets/bf57b1fd-a585-4b49-b2d2-87d0e6cf50e9
-
 ## Kernel and Environment Setup
 
 This repository contains two versions of the Linux kernel (packaged as `.deb` installation files) in the `5.4.243-mininet` and `6.8.0` directories.
