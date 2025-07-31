@@ -3,6 +3,11 @@ Code for paper "Edge-Served Congestion Control for Wireless Multipath Transmissi
 
 https://github.com/user-attachments/assets/bf57b1fd-a585-4b49-b2d2-87d0e6cf50e9
 
+# Jazz
+Code for paper "Edge-Served Congestion Control for Wireless Multipath Transmission with a Transformer Agent"
+
+https://github.com/user-attachments/assets/bf57b1fd-a585-4b49-b2d2-87d0e6cf50e9
+
 ## Kernel and Environment Setup
 
 This repository contains two versions of the Linux kernel (packaged as `.deb` installation files) in the `5.4.243-mininet` and `6.8.0` directories.
@@ -59,8 +64,4 @@ To deploy the agent in user space on the client side (the TCP connection initiat
 ```bash
 python user_space_server.py
 ```
-```
-
-To deploy the agent in user space on the client side (the TCP connection initiator), start the `user_space_server.py` script located in the `local_served` folder.
-```bash
-python user_space_server.py
+Ensure that MPTCP connections use the `jazz` congestion control algorithm while `user_space_server.py` is running.
