@@ -21,4 +21,38 @@ sudo dpkg -i linux-*.deb
 
 Next, edit the GRUB configuration to set the default kernel on boot:
 ```bash
-sudo vim
+sudo vim /etc/default/grub
+Inside the file, modify the `GRUB_DEFAULT` value to the name of the kernel version you wish to use.
+```bash
+sudo update-grub
+```
+Then, reboot your system to apply the new kernel:
+```bash
+sudo reboot
+
+### MPTCP Jazz Kernel Module
+
+After kernel installation, you can check for the existence of the `mptcp_jazz.ko` kernel module in the following directory:
+
+```bash
+ls /lib/modules/$(uname -r)/kernel/net/ipv4/mptcp_jazz.ko
+```
+
+If the file exists, you can load the module using:
+
+```bash
+sudo modprobe mptcp_jazz.ko
+```
+
+Upon successful loading, verify the available congestion control algorithms:
+
+```bash
+sudo sysctl net.ipv4.tcp_available_congestion_control
+```
+You should see `jazz-1` or `jazz-2` among the listed algorithms.
+
+## User-Space Deployment
+
+To deploy the agent in user space on the client side (the TCP connection initiator), start the `user_space_server.py` script located in the `local_served` folder.
+```bash
+python user_space_server.py
