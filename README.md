@@ -8,23 +8,21 @@ This repository contains large files managed by Git LFS. Please ensure Git LFS i
 
 **Cloning Steps (Linux):**
 
-1.  **Install Git LFS:**
-    ```bash
-    sudo apt-get update
-    sudo apt-get install git-lfs
-    ```
+Install Git LFS:
+```bash
+sudo apt-get update
+sudo apt-get install git-lfs
+```
 
-2.  **Initialize Git LFS:**
-    ```bash
-    git lfs install
-    ```
+Initialize Git LFS:
+```bash
+git lfs install
+```
 
-3.  **Clone the project:**
-    ```bash
-    git clone https://github.com/user-attachments/assets/bf57b1fd-a585-4b49-b2d2-87d0e6cf50e9
-    ```
-
-If your network environment requires a proxy, please refer to our previous conversation regarding how to configure Git for proxies.
+Clone the project:
+```bash
+git clone https://github.com/user-attachments/assets/bf57b1fd-a585-4b49-b2d2-87d0e6cf50e9
+```
 
 ## Kernel and Environment Setup
 
