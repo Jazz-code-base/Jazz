@@ -68,10 +68,15 @@ In an edge deployment scenario:
 1.  Deploy `backend_server (decision engine).py` and its dependencies on the decision engine server.
 2.  Deploy `frontend_server (proxy).py` in the user space of the MPTCP connection initiator.
 3.  Configure the IP address of the decision engine in the proxy script (`frontend_server (proxy).py`) to enable communication between the proxy and the decision engine.
+4.  First, start `backend_server (decision engine).py` on the edge entity.
+5.  Then, start `frontend_server (proxy).py` on the user end.
+6.  Afterward, proceed with testing using the corresponding congestion control algorithm.
+
 
 ## ⚠️ Important Notice
 
 This demo is currently in the experimental stage. It is designed to work specifically with MPTCP connections that have **exactly two subflows**. Using a different number of subflows will likely result in a kernel panic. Please ensure that all kernel-side subflow clients are disconnected (as indicated in the proxy or server logs) before starting the next test.
+It is crucial to ensure that the proxy or the corresponding user-space server is running when testing with the Jazz congestion control algorithm; otherwise, it will cause a kernel panic.
 
 Future development will focus on:
 -   Supporting a variable number of subflows.
