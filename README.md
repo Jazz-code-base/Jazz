@@ -3,6 +3,29 @@ Code for paper "Edge-Served Congestion Control for Wireless Multipath Transmissi
 
 https://github.com/user-attachments/assets/bf57b1fd-a585-4b49-b2d2-87d0e6cf50e9
 
+
+This repository contains large files managed by Git LFS. Please ensure Git LFS is installed before cloning the project to ensure all files are downloaded completely.
+
+**Cloning Steps (Linux):**
+
+1.  **Install Git LFS:**
+    ```bash
+    sudo apt-get update
+    sudo apt-get install git-lfs
+    ```
+
+2.  **Initialize Git LFS:**
+    ```bash
+    git lfs install
+    ```
+
+3.  **Clone the project:**
+    ```bash
+    git clone https://github.com/user-attachments/assets/bf57b1fd-a585-4b49-b2d2-87d0e6cf50e9
+    ```
+
+If your network environment requires a proxy, please refer to our previous conversation regarding how to configure Git for proxies.
+
 ## Kernel and Environment Setup
 
 This repository contains two versions of the Linux kernel (packaged as `.deb` installation files) in the `5.4.243-mininet` and `6.8.0` directories.
