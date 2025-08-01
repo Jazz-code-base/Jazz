@@ -64,7 +64,7 @@ ls /lib/modules/$(uname -r)/kernel/net/ipv4/mptcp_jazz.ko
 If the file exists, you can load the module using:
 
 ```bash
-sudo modprobe mptcp_jazz.ko
+sudo modprobe mptcp_jazz
 ```
 
 Upon successful loading, verify the available congestion control algorithms:
