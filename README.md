@@ -75,7 +75,7 @@ In an edge deployment scenario:
 
 ## ⚠️ Important Notice
 
-This demo is currently in the experimental stage. It is designed to work specifically with MPTCP connections that have **exactly two subflows**. Using a different number of subflows will likely result in a kernel panic. Please ensure that all kernel-side subflow clients are disconnected (as indicated in the proxy or server logs) before starting the next test.
+This demo is currently in the experimental stage. It is currently designed to work specifically with MPTCP connections that have **exactly two subflows**. Using a different number of subflows will likely result in a kernel panic. Please ensure that all kernel-side subflow clients are disconnected (as indicated in the proxy or server logs) before starting the next test.
 It is crucial to ensure that the proxy or the corresponding user-space server is running when testing with the Jazz congestion control algorithm; otherwise, it will cause a kernel panic.
 
 Future development will focus on:
