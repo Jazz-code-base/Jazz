@@ -21,7 +21,7 @@ git lfs install
 
 Clone the project:
 ```bash
-git clone https://github.com/user-attachments/assets/bf57b1fd-a585-4b49-b2d2-87d0e6cf50e9
+git clone https://github.com/Jazz-code-base/Jazz.git
 ```
 
 ## Kernel and Environment Setup
