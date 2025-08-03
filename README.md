@@ -1,7 +1,7 @@
 # Jazz
 Code for paper "Edge-Served Congestion Control for Wireless Multipath Transmission with a Transformer Agent"
 
-https://github.com/user-attachments/assets/bf57b1fd-a585-4b49-b2d2-87d0e6cf50e9
+https://github.com/user-attachments/assets/dd7465b4-4eb6-4b60-9625-db28bea77add
 
 
 This repository contains large files managed by Git LFS. Please ensure Git LFS is installed before cloning the project to ensure all files are downloaded completely.
