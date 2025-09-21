@@ -1,5 +1,7 @@
 # Jazz
-Code for paper "Off-Path Intelligence: Enhancing Wireless Multipath Transmission with Data-Driven Congestion Control"
+Code for paper "Edge-Served Congestion Control for Wireless Multipath Transmission with a Transformer Agent"
+
+https://github.com/user-attachments/assets/15f2c822-f184-4a11-867c-50df33a68070
 
 This repository contains large files managed by Git LFS. Please ensure Git LFS is installed before cloning the project to ensure all files are downloaded completely.
 
